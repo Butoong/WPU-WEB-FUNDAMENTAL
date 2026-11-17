@@ -105,6 +105,7 @@
 
       <!-- schedule section -->
       <section id="jadwal">
+        <h3>Schedule (Jadwal)</h3>
         <table>
           <thead>
             <th>Tanggal</th>
@@ -131,7 +132,120 @@
             <td>Tampil</td>
             <td>-</td>
           </tr>
+          <tr>
+            <th>16 Juni<br />Selasa</th>
+            <td>18.00-19.00</td>
+            <td>Pamungkas</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Tampil</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>19.15-20.15</td>
+            <td>Juicy Luicy</td>
+            <td>Tampil</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th>17 Juni<br />Rabu</th>
+            <td>18.00-19.00</td>
+            <td>Nadin Amizah</td>
+            <td>-</td>
+            <td>Tampil</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>19.15-20.15</td>
+            <td>Feast</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Tampil</td>
+          </tr>
         </table>
+      </section>
+      <br /><br />
+
+      <!-- ticket section -->
+      <section id="tiket">
+        <h3>Pembelian Tiket</h3>
+        <form id="get-ticket">
+          <label for="nama-lengkap">Nama Lengkap :</label>
+          <input
+            type="text"
+            name="nama-lengkap"
+            id="nama-lengkap"
+            placeholder="e.g Surya Dharma"
+            required
+            autocomplete="off"
+          />
+          <br /><br />
+          <label for="email">Email :</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="bikinaja@gmail.com"
+            required
+            autocomplete="off"
+          />
+          <br /><br />
+          <label for="telepon">Nomor Telepon/Handphone :</label>
+          <input
+            type="text"
+            name="telepon"
+            id="telepon"
+            required
+            autocomplete="off"
+            maxlength="15"
+            inputmode="numeric"
+          />
+          <br /><br />
+          <input
+            type="radio"
+            name="jenis-tiket"
+            id="regular"
+            value="regular"
+            checked
+            required
+          />
+          <label for="regular">Regular Rp. 500.000</label><br />
+          <input
+            type="radio"
+            name="jenis-tiket"
+            id="vip"
+            value="vip"
+            required
+          />
+          <label for="vip">VIP Rp. 1.500.000</label><br />
+          <input
+            type="radio"
+            name="jenis-tiket"
+            id="vvip"
+            value="vvip"
+            required
+          />
+          <label for="vvip">VVIP Rp. 3.000.000</label>
+
+          <br /><br />
+          <label for="jumlah-tiket">Jumlah Tiket :</label>
+          <input type="number" name="jumlah-tiket" id="jumlah-tiket" required />
+          <br /><br />
+          <label>Day Pass :</label>
+          <input type="checkbox" name="day-1" id="day-1" checked />
+          <label for="day-1">Day 1</label>
+          <input type="checkbox" name="day-2" id="day-2" />
+          <label for="day-2">Day 2</label>
+          <input type="checkbox" name="day-3" id="day-3" />
+          <label for="day-3">Day 3</label>
+        </form>
+      </section>
+
+      <!-- gallery section -->
+      <section id="galeri">
+        <h3>Galeri Festival</h3>
       </section>
     </main>
   </body>
